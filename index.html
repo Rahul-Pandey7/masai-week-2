@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TYPEWRITER</title>
+		<style type="text/css">
+		#display{
+			margin-top: 150px;
+			margin-left: 500px;
+			border: 5px solid black;
+			height: 80px;	
+			width: 880px;
+		}
+
+		#display_1{
+			margin-top: 20px;
+			margin-left: 500px;	
+		}
+		
+
+		.bg_black{
+			background-color: black;
+		}
+
+		.special_char{
+			font-family: sans-serif;
+			font-size: 20px;
+			text-align: left;
+			color: white;
+			margin: 5px;
+			
+			
+		}
+
+		.font{
+			font-family: sans-serif;
+			font-size: 15px;
+			text-align:right;
+			color: white;
+			margin: 5px;
+			
+		}
+
+		.design_number{
+			border: 2px solid black;
+			height: 60px;
+			width: 60px;
+			margin-top: 20px;
+			margin-left: 15px;
+		}
+
+		.design_char{
+			margin-left: 25px;
+			margin-top: 20px;
+			height: 60px;
+			width: 60px;
+			border: 2px solid black;
+			font-family: sans-serif;
+			font-size: 25px;
+			text-align:center;
+			color: white;
+		}
+
+		.margin_qwerty{
+			margin-left: 530px;
+		}
+
+		.margin_asdf{
+			margin-left: 560px;
+		}
+
+		.margin_zxcv{
+			margin-left: 590px;
+		}
+
+		#space{
+			margin-top: 20px;
+			margin-left: 680px;
+			height: 60px;
+			width: 480px;
+		}
+
+		.caps{
+			margin-top: 30;
+			margin-left: 800px;
+			height: 70px;
+			width: 250px;
+		}
+		</style>
+</head>
+
+<body>
+	<div id="display" style="font-style: oblique; font-size: 40px;" input type="text" value=" " ></div>
+	<button id="display_1" class="bg_black font design_number" onclick="dis('1')" value="1">1
+		<p class="special_char">!</p>
+	</button>
+	
+	<button  class="bg_black font design_number" onclick="dis('2')" value="2">2
+		<p class="special_char">@</p>
+	</button>
+
+	<button class="bg_black font design_number" onclick="dis('3')" value="3">3
+			<p class="special_char">#</p>
+	</button>
+
+	<button class="bg_black font design_number" onclick="dis('4')" value="4">4
+			<p class="special_char">$</p>
+	</button>
+
+	<button class="bg_black font design_number" onclick="dis('5')" value="5">5
+			<p class="special_char">%</p>
+	</button>
+
+	<button class="bg_black font design_number" onclick="dis('6')" value="6">6
+			<p class="special_char">^</p>
+	</button>
+
+	<button  class="bg_black font design_number" onclick="dis('7')" value="7">7
+			<p class="special_char">&</p>
+	</button>
+
+	<button class="bg_black font design_number" onclick="dis('8')" value="8">8
+			<p class="special_char">*</p>
+	</button>
+
+	<button  class="bg_black font design_number" onclick="dis('9')" value="9">9
+			<p class="special_char">(</p>
+	</button>
+
+	<button  class="bg_black font design_number" onclick="dis('0')" value="0">0
+			<p class="special_char">)</p>
+	</button>
+
+	<button id="deleted" class="bg_black" style="padding:  2px; font-family: sans-serif;
+	font-size: 15px; text-align:right; color: white; border: 2px solid black; height: 60px;width: 60px; margin-top: 20px; margin-left: 15px;" onclick="del()">DEL
+			
+	</button>
+
+	
+	
+
+	<button  class="bg_black design_char margin_qwerty" onclick="dis('q')" value="q">Q	
+	</button>
+
+	<button  class="bg_black design_char " onclick="dis('w')" value="w">W	
+	</button>
+
+	<button  class="bg_black design_char" onclick="dis('e')" value="e">E	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('r')" value="r">R	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('t')" value="t">T	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('y')" value="y">Y	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('u')" value="u">U	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('i')" value="i">I	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('o')" value="o">O	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('p')" value="p">P	
+	</button>
+
+	<button  class="bg_black  design_char margin_asdf " onclick="dis('a')" value="a">A
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('s')" value="s">S	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('d')" value="d">D
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('f')" value="f">F
+	</button>
+	
+	<button  class="bg_black  design_char " onclick="dis('g')" value="g">G	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('h')" value="h">H	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('j')" value="j">J	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('k')" value="k">K	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('l')" value="l">L	
+	</button>
+
+	<button  class="bg_black  design_char margin_zxcv " onclick="dis('z')" value="z">Z	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('x')" value="x">X	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('c')" value="c">C	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('v')" value="v">V
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('b')" value="b">B	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('n')" value="n">N	
+	</button>
+
+	<button  class="bg_black  design_char " onclick="dis('m')" value="m">M	
+	</button>
+
+	<button  class="bg_black  design_char " style="padding: 1px;" onclick="dis('.com')" value="l">.com	
+	</button>
+
+	<button id="space"  class="bg_black " onclick="dis(' ')" value=" ">	
+	</button>
+
+	<button id="upper_case" class=" design_char caps" style="padding: 1px; color: black;" onclick="cap()">CAPS
+	</button>
+
+	<script type="text/javascript">
+		function dis(val)
+		{
+		 document.getElementById("display").innerHTML += val;
+		 }
+	 	function del()
+		 {
+		
+			 var s=document.getElementById("display").innerHTML
+			 var e1=s.substring(0, s.length-1)
+		/*	 for(var i = 0; i<s.length-1; i++)
+			 {
+				 e1=s[i-1];
+			 }
+			 console.log(e1);*/
+			document.getElementById("display").innerHTML = e1; 
+		 }
+	
+		 function cap() 
+		 	{
+  				var str =document.getElementById("display").innerHTML
+  				var r = str.toLocaleUpperCase();
+  				document.getElementById("display").innerHTML = r;
+				  document.getElementById('upper_case').style.color="green"
+			}
+	 </script>	
+</body>
+</body>
+</html>
